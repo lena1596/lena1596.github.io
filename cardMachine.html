@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Card Machine</title>
+	<style type="text/css">
+		img{float: right;border: 3px solid black;}
+		figure{float: right; }
+		figcaption{text-align: center;}
+	</style>
+</head>
+<body>
+	<figure>
+		<img src="card.png">
+		<figcaption>Image By MMM Graphic</figcaption>
+	</figure>
+	
+	<h2>Let's Make A Deal!</h2>
+	<h4>Select a card rank:</h4>
+	<input type="radio" name="rank" value="Ace" checked>Ace 
+	<input type="radio" name="rank" value="Deuce">Deuce
+	<input type="radio" name="rank" value="Tray">Tray
+	<input type="radio" name="rank" value="Four">4
+	<input type="radio" name="rank" value="Five">5
+	<input type="radio" name="rank" value="Six">6
+	<input type="radio" name="rank" value="Seven">7
+	<input type="radio" name="rank" value="Eight">8
+	<input type="radio" name="rank" value="Nine">9
+	<input type="radio" name="rank" value="Ten">10
+	<input type="radio" name="rank" value="Jack">Jack
+	<input type="radio" name="rank" value="Queen">Queen
+	<input type="radio" name="rank" value="King">King
+	
+	<h4>Select a card suit:</h4>
+	<input type="radio" name="suit" value="Clubs" checked>Clubs
+	<input type="radio" name="suit" value="Spades">Spades 
+	<input type="radio" name="suit" value="Hearts">Hearts 
+	<input type="radio" name="suit" value="Diamonds">Diamonds 
+	<br>
+	<button id="card">Deal the Card</button>
+	<button id="rc">Deal a random Card</butston>
+	<button id="rh">Deal a Random Hand</button>
+	<button id="reset">Reset</button>
+	<hr>
+	<h5>Your card(s):</h5>
+	<div id="div"></div>
+	<script src="cardMachine.js"></script>
+
+</body>
+</html>
